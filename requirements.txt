@@ -1,0 +1,9 @@
+librosa==0.10.2
+wavio==0.0.9
+torch
+transformers
+st-moe-pytorch
+jsonlines
+miditok==3.0.3
+sentencepiece
+huggingface_hub

@@ -1,0 +1,9 @@
+name: gradio                                                                                                                                                                     
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - fluidsynth
+  - pip
+  - pip:
+      - -r requirements.txt

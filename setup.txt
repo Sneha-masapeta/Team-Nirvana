@@ -1,0 +1,16 @@
+import os
+requirement_path = "requirements.txt"
+install_requires = []
+if os.path.isfile(requirement_path):
+    with open(requirement_path) as f:
+        install_requires = f.read().splitlines()
+setup(name="mypackage", install_requires=install_requires, [...])
+
+
+import subprocess
+# Run the apt-get command
+try:
+    subprocess.run(["apt-get", "install", "-y", "fluidsynth"], check=True)
+    print("FluidSynth installed successfully")
+except subprocess.CalledProcessError as e:
+    print(f"An error occurred while installing FluidSynth: {e}")

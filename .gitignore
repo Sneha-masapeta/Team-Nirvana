@@ -1,0 +1,9 @@
+env/
+__pycache__/
+*.wav
+*.mid
+*.sf2
+gradio_cached_examples/
+artifacts/
+FluidSynth-2.2.3/
+FluidR3_GM.sf2
